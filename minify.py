@@ -1,12 +1,13 @@
 import sublime, sublime_plugin
 import subprocess
+import re
 
 def minifyJs(fileName):
 	if not fileName.endswith('.js'):
 		print('file is not a javascript file, minification skipped')
 		return
 
-	outputFileName = fileName + '.min'
+	outputFileName = re.sub('\.js$', '.min.js', fileName)
 	cmd = ['uglifyjs', '--compress', '--mangle', '--output', outputFileName, '--', fileName]
 
 	uglifyProcess = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
