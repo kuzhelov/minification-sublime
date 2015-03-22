@@ -1,4 +1,4 @@
-# minification-sublime
+# minification-sublime-3
 
 ### Notes
 This package is intended to be used with ***Sublime-Text 3*** only (due to the fact of subprocess module's import presence).
