@@ -13,4 +13,4 @@ In order to be installed the content should be copied to Sublime's package direc
 ***/Users/<username>/Library/Application Support/Sublime Text X/User/***
 
 ### Behavior
-After module and all its dependencies being successfully installed it will create an additional file with ***'.min'*** postfix at the same directory on save requests for ***.js*** files.
+After module and all its dependencies being successfully installed it will create an additional file with ***'.min.js'*** postfix at the same directory on save requests for ***.js*** files.
